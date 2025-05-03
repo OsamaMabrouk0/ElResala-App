@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cairo Font-->
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=cairo-bold" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>الرسالة</title>
+    <link rel="icon" href="assets/images/mosque-solid.svg" type="mosque-icon">
+</head>
+
+<body>
+
+
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="logo" style="font-size: 29px; z-index: 1000;">الرسالة</div>
+            <ul>
+                <li data-target="#main-section">الصفحة الرئيسة</li>
+                <li data-target="#hadith-section">أحاديث</li>
+                <li data-target="#lectures-section">المحاضرات</li>
+                <li data-target="#quran-section">القرآن الكريم</li>
+                <li data-target="#prayer-times-section">أوقات الصلاة</li>
+                <li data-target="#azkar-section">الاذكار</li>
+                <li data-target="#contact">تواصل معنا</li>
+            </ul>
+
+            <div class="bars">
+                <i class="fas fa-bars icon"></i>
+            </div>
+
+    </header>
+
+
+    <!-- Main Section -->
+    <section class="main" id="main-section">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    مرحبا بك في تطبيق<br>الرسالة الإسلامي
+                </h2>
+                <button class="btn" id="startBrowsingBtn">
+                    إبداء التصفح
+                    <i class="fas fa-caret-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hadith Section -->
+    <section class="hadith" id="hadith-section">
+        <h3>أحاديث</h3>
+        <div class="container">
+
+            <div class="hadith-container"></div>
+
+            <div class="buttons">
+                <div class="btn-ching R prev">
+                    <i class="fas fa-caret-right"></i>
+                    <div class="prev">السابق</div>
+                </div>
+
+                <div id="hadithLoadingMessage" class="loadingMessage" style="display: none;">
+                    <p>جاري التحميل...</p>
+                </div>
+
+                <div class="number"></div>
+                <div class="btn-ching next">
+                    <div class="next">التالي</div>
+                    <i class="fas fa-caret-left"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lectures Section -->
+    <section class="lectures" id="lectures-section">
+        <h3>المحاضرات</h3>
+        <div class="container">
+            <div class="lectures-container">
+                <div class="right">
+                    <div class="lec">
+                        <div class="lec-text">
+                            <h4>اسرار اختيار مكة لانطلاق الدعوة</h4>
+                            <p>تقديم فضيلة الإمام الشيخ الشعراوي</p>
+                            <audio id="audio1" controls>
+                                <source src="https://archive.org/download/by_hassan_cha3raoui/sh8_3.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم تشغيل الملفات الصوتية.
+                            </audio>
+                        </div>
+                        <img src="assets/images/sha.jpg" alt="الشيخ الشعراوي">
+                    </div>
+    
+                    <div class="lec">
+                        <div class="lec-text">
+                            <h4>ميزة الانسان و أساس الاصطفاءات</h4>
+                            <p>تقديم فضيلة الإمام الشيخ الشعراوي</p>
+                            <audio id="audio2" controls>
+                                <source src="https://archive.org/download/by_hassan_cha3raoui/sh3_1.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم تشغيل الملفات الصوتية.
+                            </audio>
+                        </div>
+                        <img src="assets/images/sha.jpg" alt="الشيخ الشعراوي">
+                    </div>
+    
+                    <div class="lec">
+                        <div class="lec-text">
+                            <h4>طبيعة الانسان و تعريف الاخلاق</h4>
+                            <p>تقديم فضيلة الإمام الشيخ الشعراوي</p>
+                            <audio id="audio3" controls>
+                                <source src="https://archive.org/download/by_hassan_cha3raoui/sh1_1.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم تشغيل الملفات الصوتية.
+                            </audio>
+                        </div>
+                        <img src="assets/images/sha.jpg" alt="الشيخ الشعراوي">
+                    </div>
+    
+                    <div class="lec">
+                        <div class="lec-text">
+                            <h4>استقبال القدر و فهم قضية الموت</h4>
+                            <p>تقديم فضيلة الإمام الشيخ الشعراوي</p>
+                            <audio id="audio4" controls>
+                                <source src="https://archive.org/download/by_hassan_cha3raoui/sh2_7.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم تشغيل الملفات الصوتية.
+                            </audio>
+                        </div>
+                        <img src="assets/images/sha.jpg" alt="الشيخ الشعراوي">
+                    </div>
+    
+                    <div class="lec">
+                        <div class="lec-text">
+                            <h4>منهج الشيطان في الاغواء</h4>
+                            <p>تقديم فضيلة الإمام الشيخ الشعراوي</p>
+                            <audio id="audio5" controls>
+                                <source src="https://archive.org/download/by_hassan_cha3raoui/sh5_5.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم تشغيل الملفات الصوتية.
+                            </audio>
+                        </div>
+                        <img src="assets/images/sha.jpg" alt="الشيخ الشعراوي">
+                    </div>
+                </div>
+                <div class="left">
+                    <iframe src="https://www.youtube.com/embed/631L-aGzfAE" frameborder="0"></iframe>
+                    <p>( مش لاقي الطريق ) خطبة شيقة من الشيخ حازم شومان</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="loadingMessage" style="display: none;">جاري التحميل...</div>
+    <!-- Quran Section -->
+
+    <section class="quran" id="quran-section">
+        <h3>القرآن الكريم</h3>
+        <div class="container">
+            <div class="surahsContainer" id="surahsContainer"></div>
+
+            <!-- Modal لعرض محتوى السورة -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="surahName"></h2>
+                    <div id="surahContent"></div>
+                    <button id="closeSurahBtn">إغلاق</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Pray-time Section -->
+    <section class="Pray" id="prayer-times-section">
+        <h3>أوقات الصلاة</h3>
+        <div class="container">
+            <p>اوقات الصلاة حسب التوقيت العالمي ل مدينة القاهرة</p>
+            <br>
+            <div class="cards">
+                <div class="card" id="fajr-time"></div>
+                <div class="card" id="dhuhr-time"></div>
+                <div class="card" id="asr-time"></div>
+                <div class="card" id="maghrib-time"></div>
+                <div class="card" id="isha-time"></div>
+            </div>
+            <div class="hijri-date" id="hijri-date"></div>
+        </div>
+    </section>
+
+
+
+    
+            <!-- azkar Section -->
+
+            <section class="azkar" id="azkar-section">
+                <h3>الأذكار</h3>
+                <div class="container">
+        
+                    <div class="azkar-item">
+                        <div class="azkar-title" data-azkar="sabah">أذكار الصباح</div>
+                        <ul class="azkar-content" id="sabah-azkar">
+                            <!-- سيتم تحميل الأذكار هنا -->
+                        </ul>
+                    </div>
+        
+                    <div class="azkar-item">
+                        <div class="azkar-title" data-azkar="masaa">أذكار المساء</div>
+                        <ul class="azkar-content" id="masaa-azkar">
+                            <!-- سيتم تحميل الأذكار هنا -->
+                        </ul>
+                    </div>
+        
+                    <div class="azkar-item">
+                        <div class="azkar-title" data-azkar="noom">أذكار النوم</div>
+                        <ul class="azkar-content" id="noom-azkar">
+                            <!-- سيتم تحميل الأذكار هنا -->
+                        </ul>
+                    </div>
+        
+                </div>
+            </section>
+
+
+
+
+    <!-- Contact Section -->
+
+
+
+    <center>
+        <section class="section contact" id="contact">
+            <h3>تواصل معنا</h3>
+            <div class="container">
+                <form action="#">
+                    <div class="input_box">
+                        <div class="input_filed field pro2">
+                            <i class="fas fa-user field-icon"></i>
+                            <input type="text" placeholder="الاسم الكامل" id="name" class="item" autocomplete="off">
+                            <div class="error-txt">الاسم الكامل لا يمكن أن يكون فارغًا</div>
+                        </div>
+                        <div class="input_filed field pro3">
+                            <i class="fas fa-envelope field-icon"></i>
+                            <input type="text" placeholder="البريد الإلكتروني" id="email" class="item" autocomplete="off">
+                            <div class="error-txt">البريد الإلكتروني لا يمكن أن يكون فارغًا</div>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <div class="input_filed field pro2">
+                            <i class="fas fa-phone field-icon"></i>
+                            <input type="text" placeholder="رقم الهاتف" id="phone" class="item" autocomplete="off">
+                            <div class="error-txt">رقم الهاتف لا يمكن أن يكون فارغًا</div>
+                        </div>
+                        <div class="input_filed field pro3">
+                            <i class="fas fa-book field-icon"></i>
+                            <input type="text" placeholder="الموضوع" id="subject" class="item" autocomplete="off">
+                            <div class="error-txt">الموضوع لا يمكن أن يكون فارغًا</div>
+                        </div>
+                    </div>
+                    <div class="input-filed field pro1">
+                        <i class="fas fa-comment field-icon"></i>
+                        <textarea id="message" cols="30" rows="10" placeholder="رسالتك" class="item" autocomplete="off"></textarea>
+                        <div class="error-txt">الرسالة لا يمكن أن تكون فارغة</div>
+                    </div>
+        
+                    <button class="pro4" type="submit">إرسال الرسالة</button>
+                </form>
+
+            </div>
+        </section>
+    </center>
+        <script>
+            const form = document.querySelector('form');
+            const fullName = document.getElementById("name");
+            const email = document.getElementById("email");
+            const phone = document.getElementById("phone");
+            const subject = document.getElementById("subject");
+            const mess = document.getElementById("message");
+        
+            function sendEmail() {
+                const bodyMessage = `الاسم الكامل: ${fullName.value}<br> البريد الإلكتروني: ${email.value}<br> رقم الهاتف: ${phone.value}<br> الرسالة: ${mess.value}`;
+        
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "osamamabrouk015@gmail.com",
+                    Password: "2D730029C43137E3429E6B352146AF1A69C1",
+                    To: 'osamamabrouk015@gmail.com',
+                    From: "osamamabrouk015@gmail.com",
+                    Subject: subject.value,
+                    Body: bodyMessage
+                }).then(
+                    message => {
+                        if (message === "OK") {
+                            Swal.fire({
+                                title: "نجاح!",
+                                text: "تم إرسال الرسالة بنجاح!",
+                                icon: "success"
+                            }).then(() => {
+                                window.location.reload();
+                            });
+                        } else {
+                            Swal.fire({
+                                title: "خطأ!",
+                                text: "فشل في إرسال الرسالة. حاول مرة أخرى لاحقًا.",
+                                icon: "error"
+                            });
+                        }
+                    }
+                );
+            }
+        
+            function checkInputs() {
+                const items = document.querySelectorAll(".item");
+        
+                for (const item of items) {
+                    const errorMessage = item.parentElement.querySelector(".error-txt");
+        
+                    if (item.value.trim() === "") {
+                        item.classList.add("error");
+                        errorMessage.textContent = "هذا الحقل لا يمكن أن يكون فارغًا.";
+                        errorMessage.style.display = "block";
+                    } else {
+                        item.classList.remove("error");
+                        errorMessage.style.display = "none";
+                    }
+                }
+        
+                checkEmail();
+            }
+        
+            function checkEmail() {
+                const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+        
+                if (!email.value.match(emailRegex)) {
+                    email.classList.add("error");
+                    email.parentElement.querySelector(".error-txt").textContent = "أدخل بريدًا إلكترونيًا صالحًا.";
+                    email.parentElement.querySelector(".error-txt").style.display = "block";
+                } else {
+                    email.classList.remove("error");
+                    email.parentElement.querySelector(".error-txt").style.display = "none";
+                }
+            }
+        
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                checkInputs();
+        
+                const errors = document.querySelectorAll(".error");
+                if (errors.length === 0) {
+                    sendEmail();
+                } else {
+                    Swal.fire({
+                        title: "خطأ!",
+                        text: "يرجى ملء جميع الحقول المطلوبة بشكل صحيح.",
+                        icon: "error"
+                    });
+                }
+            });
+        </script>
+
+        
+        
+
+        <footer>
+            <div class="container">
+                <p>&copy;2024 ElResala . All rights reserved For Osama MAbrouk </p>
+            </div>
+        </footer>
+
+
+    <button id="scrollToTopBtn" class="scrollToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <button id="closeSurahBtn" style="display: none;">إغلاق السورة</button>
+
+
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p>جاري التحميل...</p>
+    </div>
+
+    <!-- Main JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
